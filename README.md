@@ -1,4 +1,4 @@
-# Multi-User Blogging Platform
+# Kapybara Blogging Platform
 
 A modern, full-stack blogging platform built with Next.js 15, PostgreSQL, Drizzle ORM, and tRPC.
 
