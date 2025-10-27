@@ -1,4 +1,4 @@
-# Multi-User Blogging Platform
+# Kapybara Blogging Platform
 
 A modern, full-stack blogging platform built with Next.js 15, PostgreSQL, Drizzle ORM, and tRPC.
 
@@ -6,7 +6,6 @@ A modern, full-stack blogging platform built with Next.js 15, PostgreSQL, Drizzl
 
 - **Blog Post Management**: Create, read, update, and delete blog posts
 - **Category System**: Organize posts with categories
-- **Multi-User Support**: Support for multiple authors
 - **Responsive Design**: Mobile-first design that works on all devices
 - **Type-Safe APIs**: Built with tRPC for end-to-end type safety
 - **Database**: PostgreSQL with Drizzle ORM for type-safe queries
@@ -56,38 +55,39 @@ A modern, full-stack blogging platform built with Next.js 15, PostgreSQL, Drizzl
 
 ## Project Structure
 
-\`\`\`
+```plaintext
 ├── app/
 │   ├── api/
-│   │   └── trpc/          # tRPC API routes
+│   │   └── trpc/              # tRPC API routes
 │   ├── blog/
-│   │   └── [slug]/        # Individual blog post pages
-│   ├── dashboard/         # Admin dashboard
-│   ├── layout.tsx         # Root layout
-│   ├── page.tsx           # Home page
-│   └── globals.css        # Global styles
+│   │   └── [slug]/            # Individual blog post pages
+│   ├── dashboard/             # Admin dashboard
+│   ├── layout.tsx             # Root layout
+│   ├── page.tsx               # Home page
+│   └── globals.css            # Global styles
+│
 ├── components/
-│   ├── ui/                # shadcn/ui components
-│   ├── header.tsx         # Navigation header
-│   ├── post-card.tsx      # Blog post card component
-│   ├── pagination.tsx     # Pagination component
-│   └── category-filter.tsx # Category filter component
+│   ├── ui/                    # shadcn/ui components
+│   ├── header.tsx             # Navigation header
+│   ├── post-card.tsx          # Blog post card component
+│   ├── pagination.tsx         # Pagination component
+│   └── category-filter.tsx    # Category filter component
+│
 ├── lib/
-│   ├── db.ts              # Database client
-│   ├── schema.ts          # Drizzle schema
-│   ├── trpc.ts            # tRPC configuration
-│   ├── trpc-client.ts     # tRPC client
-│   └── utils.ts           # Utility functions
-├── server/
-│   └── routers/
-│       ├── posts.ts       # Posts API procedures
-│       ├── categories.ts  # Categories API procedures
-│       └── index.ts       # Main router
-└── scripts/
-    ├── init-db.sql        # Database initialization
-    ├── setup-db.ts        # Setup script
-    └── seed-db.ts         # Seeding script
-\`\`\`
+│   ├── db.ts                  # Database client
+│   ├── schema.ts              # Drizzle schema
+│   ├── trpc.ts                # tRPC configuration
+│   ├── trpc-client.ts         # tRPC client
+│   └── utils.ts               # Utility functions
+│
+└── server/
+   └── routers/
+       ├── posts.ts           # Posts API procedures
+       ├── categories.ts      # Categories API procedures
+       └── index.ts           # Main router
+
+```
+
 
 ## API Routes
 
@@ -179,6 +179,3 @@ This project is ready to deploy on Vercel:
 3. Add environment variables in Vercel dashboard
 4. Deploy
 
-## License
-
-MIT
