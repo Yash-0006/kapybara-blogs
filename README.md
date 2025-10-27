@@ -6,7 +6,6 @@ A modern, full-stack blogging platform built with Next.js 15, PostgreSQL, Drizzl
 
 - **Blog Post Management**: Create, read, update, and delete blog posts
 - **Category System**: Organize posts with categories
-- **Multi-User Support**: Support for multiple authors
 - **Responsive Design**: Mobile-first design that works on all devices
 - **Type-Safe APIs**: Built with tRPC for end-to-end type safety
 - **Database**: PostgreSQL with Drizzle ORM for type-safe queries
