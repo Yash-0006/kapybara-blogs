@@ -36,7 +36,7 @@ export default function BlogPage() {
   return (
     <>  
     <Header />
-    <div className="min-h-screen bg-background mx-30">
+    <div className="min-h-screen bg-background md:mx-30">
       
 
       <section className="container mx-auto px-4 py-8">
